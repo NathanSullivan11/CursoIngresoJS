@@ -46,7 +46,7 @@ function multiplicar()
 { 
 	var valor1;
 	var valor2;
-	var multiplicar;
+	var multiplicacion;
 
 	valor1 = document.getElementById('txtIdNumeroUno').value;
 	valor1 = parseInt(valor1);
@@ -54,16 +54,16 @@ function multiplicar()
 	valor2 = document.getElementById('txtIdNumeroDos').value;
 	valor2 = parseInt(valor2);
 
-	multiplicar = valor1 * valor2;
+	multiplicacion = valor1 * valor2;
 
-	alert("La multiplicación es " + multiplicar );
+	alert("La multiplicación es " + multiplicacion );
 }
 
 function dividir()
 {
 	var valor1;
 	var valor2;
-	var dividir;
+	var division;
 
 	valor1 = document.getElementById('txtIdNumeroUno').value;
 	valor1 = parseInt(valor1);
@@ -71,9 +71,9 @@ function dividir()
 	valor2 = document.getElementById('txtIdNumeroDos').value;
 	valor2 = parseInt(valor2);
 
-	dividir = valor1 / valor2;
+	division = valor1 / valor2;
 
-	alert("La división es " + dividir );
+	alert("La división es " + division );
 }
 
 //txtIdNumeroUno
