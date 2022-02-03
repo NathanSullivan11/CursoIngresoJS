@@ -9,16 +9,17 @@ Ejercicio E/S 09.js
 */
 function mostrarAumento()
 {
-	var resultado;
-	var sueldo;
 	var porcentaje;
+	var sueldo;
+	var resultado
 
 	sueldo = document.getElementById('txtIdSueldo').value;
 	sueldo = parseInt(sueldo)
 
 	porcentaje = sueldo*(10/100);
+	resultado = sueldo + porcentaje
 
-	document.getElementById('txtIdResultado').value = porcentaje + sueldo;
+	document.getElementById('txtIdResultado').value = resultado ;
 
 
 	//alert("El aumento fue de " + porcentaje);

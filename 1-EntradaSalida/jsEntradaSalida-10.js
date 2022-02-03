@@ -18,7 +18,9 @@ function mostrarAumento()
 
 	porcentaje = importe*(25/100);
 
-	document.getElementById('txtIdResultado').value = importe - porcentaje;
+	resultado = importe - porcentaje
+
+	document.getElementById('txtIdResultado').value = resultado;
 
 	//alert("ok");
 }
