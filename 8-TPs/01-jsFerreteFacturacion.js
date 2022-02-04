@@ -9,73 +9,73 @@ Trabajo Practico FerreteFacturacion1.js
 */
 function Sumar () 
 {
-	var numero1;
-	var numero2;
-	var numero3;
+	var precioUno;
+	var precioDos;
+	var precioTres;
 	var suma;
+	var texto;
 
-	numero1 = document.getElementById('txtIdPrecioUno').value;
-	numero1 = parseInt(numero1);
+	precioUno = document.getElementById('txtIdPrecioUno').value;
+	precioDos = document.getElementById('txtIdPrecioDos').value;
+	precioTres = document.getElementById('txtIdPrecioTres').value;
+	
+	precioUno = parseInt(precioUno);
+	precioDos = parseInt(precioDos);
+	precioTres = parseInt(precioTres);
 
-	numero2 = document.getElementById('txtIdPrecioDos').value;
-	numero2 = parseInt(numero2);
+	suma = (precioUno + precioDos + precioTres);
 
-	numero3 = document.getElementById('txtIdPrecioTres').value;
-	numero3 = parseInt(numero3);
-
-	suma = (numero1 + numero2 + numero3);
-
-	alert("La suma es $" + suma);
-
+	texto = ("La suma es $" + suma);
+	alert(texto);
 }
 function Promedio () 
 {
-	var numero1;
-	var numero2;
-	var numero3;
+	var precioUno;
+	var precioDos;
+	var precioTres;
 	var promediar;
 	var cantidadDePrecios;
+	var texto;
 
-	numero1 = document.getElementById('txtIdPrecioUno').value;
-	numero1 = parseInt(numero1);
-
-	numero2 = document.getElementById('txtIdPrecioDos').value;
-	numero2 = parseInt(numero2);
-
-	numero3 = document.getElementById('txtIdPrecioTres').value;
-	numero3 = parseInt(numero3);
+	precioUno = document.getElementById('txtIdPrecioUno').value;
+	precioDos = document.getElementById('txtIdPrecioDos').value;
+	precioTres = document.getElementById('txtIdPrecioTres').value;
+	
+	precioUno = parseInt(precioUno);
+	precioDos = parseInt(precioDos);
+	precioTres = parseInt(precioTres);
 
 	cantidadDePrecios = 3;
-
-	promediar = (numero1+numero2+numero3)/cantidadDePrecios;
-
-	alert("El promedio es $" + promediar);
+	
+	promediar = (precioUno+precioDos+precioTres)/cantidadDePrecios;
+	texto = "El promedio es $" + promediar;
+	alert(texto);
 }
 function PrecioFinal () 
 {
-	var numero1;
-	var numero2;
-	var numero3;
+	var precioUno;
+	var precioDos;
+	var precioTres;
 	var cantidadTotal;
 	var suma;
 	var iva;
 	var calculo;
+	var texto;
 
-	numero1 = document.getElementById('txtIdPrecioUno').value;
-	numero1 = parseInt(numero1);
+	precioUno = document.getElementById('txtIdPrecioUno').value;
+	precioDos = document.getElementById('txtIdPrecioDos').value;
+	precioTres = document.getElementById('txtIdPrecioTres').value;
 
-	numero2 = document.getElementById('txtIdPrecioDos').value;
-	numero2 = parseInt(numero2);
-
-	numero3 = document.getElementById('txtIdPrecioTres').value;
-	numero3 = parseInt(numero3);
+	precioUno = parseInt(precioUno);
+	precioDos = parseInt(precioDos);
+	precioTres = parseInt(precioTres);
 
 	iva = 21;
-	suma = (numero1 + numero2 + numero3);
+	suma = (precioUno + precioDos + precioTres);
 	calculo = suma * (iva/100) ;
 	cantidadTotal = suma + calculo;
-
 	
+	texto = "El precio final más IVA es $" + cantidadTotal;
 
-	alert("El precio final más IVA es $" + cantidadTotal);
+	alert(texto);
 }

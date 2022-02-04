@@ -12,7 +12,9 @@ function Rectangulo ()
 	var largo;
 	var ancho;
 	var perimetro;
-	var tresHilos;
+	var alambres;
+	var cantidadTotalAlambre;
+	var texto;
 
 	largo = document.getElementById('txtIdLargo').value;
 	largo = parseInt(largo);
@@ -20,25 +22,33 @@ function Rectangulo ()
 	ancho = parseInt(ancho);
 
 	perimetro = (largo + ancho)*2;
-	perimetroTotal = perimetro*3; 
+	alambres = 3
+	cantidadTotalAlambre = perimetro*alambres; 
+	texto = "Se necesita comprar " + cantidadTotalAlambre + " metros de alambre para alambrar con tres hilos un terreno rectangular con perimetro = " + perimetro + " metros";
 
-	alert("Se necesita comprar " + perimetroTotal + " metros de alambre.");
+	alert(texto);
+	//alert("Se necesita comprar " + perimetroTotal + " metros de alambre.");
 }
 function Circulo () 
 {
 	var radio;
-	var calculo;
+	var perimetro;
 	var pi;
-	var tresHilos;
+	var cantidadTotalAlambre;
+	var texto;
+	var alambres;
 	
 	radio = document.getElementById('txtIdRadio').value;
 	radio = parseInt(radio);
 
-	pi = 3.14
-	calculo = (radio*2)*pi;
-	tresHilos = calculo*3
+	pi = 3.14;
+	alambres = 3;
+	perimetro = (radio*2)*pi;
+	cantidadTotalAlambre = perimetro*alambres;
+	texto = "Se necesita comprar " + cantidadTotalAlambre + " metros de alambre para alambrar con tres hilos un terreno rectangular con perimetro = " + perimetro +" metros";
 
-	alert("Se necesita comprar " + tresHilos + " metros de alambre.");
+	alert(texto)
+	//alert("Se necesita comprar " + tresHilos + " metros de alambre.");
 }
 function Materiales () 
 {
@@ -46,8 +56,10 @@ function Materiales ()
 	var cal;
 	var largo;
 	var ancho;
-	var calculo;
 	var area;
+	var cantidadCal;
+	var cantidadCemento;
+	var texto;
 
 	largo = document.getElementById('txtIdLargo').value;
 	largo = parseInt(largo);
@@ -55,11 +67,13 @@ function Materiales ()
 	ancho = parseInt(ancho);
 
 	area = largo*ancho;
-	cemento = 2
-	cal = 3
+	cemento = 2;
+	cal = 3;
 
-	calculoCemento = area*cemento	
-	calculoCal = area*cal
+	cantidadCemento = area*cemento;
+	cantidadCal = area*cal;
+	texto = "Se necesitan " + cantidadCemento + " bolsas de cemento y " + cantidadCal + " bolsas de cal para rellenar un contrapiso de " + area + " metros cuadrados.";
 
-	alert("Se necesitan " + calculoCemento + " bolsas de cemento y " + calculoCal + " bolsas de cal.")
+	alert(texto)
+	//alert("Se necesitan " + calculoCemento + " bolsas de cemento y " + calculoCal + " bolsas de cal.")
 }

@@ -9,25 +9,31 @@ Trabajo Practico FerreteFacturacion3.js
 function FahrenheitCentigrados () 
 {
 	var temperatura;
-	var calculo;
+	var centigrados;
+	var texto;
 
 	temperatura = document.getElementById('txtIdTemperatura').value;
-	temperatura = parseInt(temperatura)
+	temperatura = parseFloat(temperatura)
 
-	calculo = (temperatura-32)*(5/9);
+	centigrados = (temperatura-32)*(5/9);
 
-	alert(temperatura + "º Fahrenheit son " + calculo + "º centígrados");
+	texto = temperatura + "º Fahrenheit son " + centigrados + "º centígrados"
+
+	alert(texto);
 }
 
 function CentigradosFahrenheit () 
 {
 	var temperatura;
-	var calculo;
+	var fahrenheit;
+	var texto;
 
 	temperatura = document.getElementById('txtIdTemperatura').value;
-	temperatura = parseInt(temperatura)
+	temperatura = parseFloat(temperatura)
 
-	calculo = (temperatura*(9/5))+32;
+	fahrenheit = (temperatura*(9/5))+32;
 
-	alert(temperatura + "º centígrados son " + calculo + "º Fahrenheit");
+	texto = temperatura + "º centígrados son " + fahrenheit + "º Fahrenheit"
+
+	alert(texto);
 }
