@@ -1,3 +1,7 @@
+/* 
+Sullivan Nathan DIV Z
+Ejercicio IF 02.js
+*/
 function mostrar()
 {
 	var edad;

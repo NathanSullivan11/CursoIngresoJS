@@ -1,3 +1,7 @@
+/* 
+Sullivan Nathan DIV Z
+Ejercicio IF 08.js
+*/
 function mostrar()
 {
 	var edad;
@@ -5,12 +9,10 @@ function mostrar()
 	edad = document.getElementById('txtIdEdad').value;
 	edad = parseInt(edad);
 	estadoCivil = document.getElementById('estadoCivil').value;
-	
-	if (edad < 18 && estadoCivil !="Soltero") {
-		return null
-	} else if (edad >= 18 && estadoCivil==="Soltero"){
+
+	if (edad > 17 && estadoCivil=="Soltero")
+	{
 		alert("Es soltero y no es menor")
 	}
-
-
+	
 }//FIN DE LA FUNCIÓN
